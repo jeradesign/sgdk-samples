@@ -10,7 +10,7 @@ void loadDriver()
     u32 addr;
 
     // upload Z80 driver and reset Z80
-    Z80_upload(0, z80_drv, sizeof(z80_drv));
+    Z80_loadCustomDriver(z80_drv, sizeof(z80_drv));
 
     // misc parameters initialisation
     Z80_requestBus(TRUE);
